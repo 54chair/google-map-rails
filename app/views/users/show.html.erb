@@ -1,2 +1,19 @@
 <h1>Users#show</h1>
 <p>Find me in app/views/users/show.html.erb</p>
+
+<%= @user.name %>
+<ul>
+  <% @reviews.each do |review| %>
+    <li><%= review.comment %></li>
+  <% end %>
+</ul>
+
+<ol> 
+  <% @shops.each do |shop| %>
+    <li>
+      <%= shop.name %>
+      <%= shop.latitude %>
+      <%= shop.longitude %>
+    </li>
+  <% end %>
+</ol>
