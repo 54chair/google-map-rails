@@ -39,6 +39,9 @@ gem "jbuilder"
 # 環境変数を使用するため
 gem "dotenv-rails"
 
+# controller内の変数をJavascript内で使うため
+gem "gon"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
