@@ -18,13 +18,20 @@
   <% end %>
 </ol>
 
-<h2>googlemap</h2>
 <div id='map'></div>
 
 <style>
 #map {
-  height: 600px;
-  width: 800px;
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #map {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 </style>
 
