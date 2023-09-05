@@ -7,5 +7,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @reviews = @user.reviews
     @shops = Shop.where(id: @reviews.pluck(:shop_id))
+    gon.shops = Shop.where(id: @reviews.pluck(:shop_id))
   end
 end
